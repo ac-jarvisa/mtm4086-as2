@@ -1,7 +1,14 @@
 <?php 
+session_unset();
 session_start();
 
-$content = '<p>Start your Story</p>';
+$content = '<p>Start your Story</p> 
+
+<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=1">
+
+<input type="submit" name="story-end" class="btn btn-info pull-left" value="Start Your Story">
+
+</form>';
 $form = '';
 $results = '';
 
@@ -9,6 +16,7 @@ if(isset($_GET['pg'])){
 	$_GET['pg'] == "start";
 			
 	if($_GET['pg'] == 1){
+
 		$content = '<p>A Female _______ (noun) Entered the room. There was _____ (feeling) in her eyes.</p>
 			<p>FEMALE: "Detective _________(noun), thank you for seeing me on such a ________(adjective) day!"</p>
 			<p>DETECTIVE: "Its alright miss ________(noun). What seems to be the problem?</p>';
@@ -26,14 +34,22 @@ if(isset($_GET['pg'])){
                 <input type="submit" name="story-1" class="btn btn-info pull-right" value="next part">            </form>';
 			
 	}else if($_GET['pg'] == 2){
-		// if the submit button was pressed on the last page,
+		// if the submit button was pressed on the previous page...
 		if(isset($_POST['story-1'])){
 			$_SESSION['story-1-a1'] = $_POST['story-1-a1'];
 			$_SESSION['story-1-a2'] = $_POST['story-1-a2'];
 			$_SESSION['story-1-a3'] = $_POST['story-1-a3'];
 			$_SESSION['story-1-a4'] = $_POST['story-1-a4'];
 			$_SESSION['story-1-a5'] = $_POST['story-1-a5'];
+			
+			// checks to see if all form inputs are empty
+			if(empty($_POST['story-1-a1']) && empty($_POST['story-1-a2']) && empty($_POST['story-1-a3']) && empty($_POST['story-1-a4']) && empty($_POST['story-1-a5'])){
+				// if any inputs are empty, redirect the user to the start page.	
+				header("Location: story.php?=start");
+			}
+			// if all is well, continue to the next page
 		}
+		
 			$content = '<p>FEMALE: "I was walking home, when a ________(noun) came out of nowhere and stole my ________(noun)"!
 			<p>DETECTIVE: "I am sorry to hear that. Can you describe the ________(noun)?"</p>
 			<p>FEMALE: "Yes, the _______(noun) was _______, weighed ______ pounds, had _______(noun) _______(noun), and had ______ (colour) eyes."</p>';
@@ -60,6 +76,7 @@ if(isset($_GET['pg'])){
                 <input type="submit" name="story-1" class="btn btn-info pull-right" value="next part">            </form>';
 		}
 	else if($_GET['pg'] == 3){
+		// if the submit button was pressed on the last page...
 		if(isset($_POST['story-1'])){
 			$_SESSION['story-2-a1'] = $_POST['story-2-a1'];
 			$_SESSION['story-2-a2'] = $_POST['story-2-a2'];
@@ -70,12 +87,18 @@ if(isset($_GET['pg'])){
 			$_SESSION['story-2-a7'] = $_POST['story-2-a7'];
 			$_SESSION['story-2-a8'] = $_POST['story-2-a8'];
 			$_SESSION['story-2-a9'] = $_POST['story-2-a9'];
+				
+			// checks to see if all form inputs are empty
+			if(empty($_POST['story-2-a1']) && empty($_POST['story-2-a2']) && empty($_POST['story-2-a3']) && empty($_POST['story-2-a4']) && empty($_POST['story-2-a5']) && empty($_POST['story-2-a6']) && empty($_POST['story-2-a7']) && empty($_POST['story-2-8']) && empty($_POST['story-2-a9'])){
+				// if any inputs are empty, redirect the user to the start page.	
+				header("Location: story.php?=start");
+			}
+			// if all is well, continue to the next page
 		}
-		print_r($_SESSION);
-			$content = '<p>DETECTIVE: "Thank you, this will help in ________ (adjective) the _________(noun). However, I will require ________ (noun) as a downpayment for my ________(adjective)."</p>
+		$content = '<p>DETECTIVE: "Thank you, this will help in ________ (adjective) the _________(noun). However, I will require ________ (noun) as a downpayment for my ________(adjective)."</p>
 			<p>FEMALE: "Yes, of course. I will ______ (adjective) your ______ (noun). Thanks again Detective!"</p>';
 			
-			$form = '<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=end">
+		$form = '<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=end">
             	<label for="story-3-a1">1) </label>
                 <input type="text" id="story-1-a1" name="story-3-a1" class="form-control">
                 <label for="story-3-a2">2) </label>
@@ -89,16 +112,26 @@ if(isset($_GET['pg'])){
 				<label for="story-3-a6">6) </label>
                 <input type="text" id="story-1-a6" name="story-3-a6" class="form-control">
                 <input type="submit" name="story-1" class="btn btn-info pull-right" value="next part">            </form>';
+				
+				
 	}else if($_GET['pg'] == "end"){
-				if(isset($_POST['story-1'])){
+		// This is the last page of the story
+		// if the submit button was pressed on the last page...
+		if(isset($_POST['story-1'])){
 			$_SESSION['story-3-a1'] = $_POST['story-3-a1'];
 			$_SESSION['story-3-a2'] = $_POST['story-3-a2'];
 			$_SESSION['story-3-a3'] = $_POST['story-3-a3'];
 			$_SESSION['story-3-a4'] = $_POST['story-3-a4'];
 			$_SESSION['story-3-a5'] = $_POST['story-3-a5'];
 			$_SESSION['story-3-a6'] = $_POST['story-3-a6'];
+			
+			// checks to see if all form inputs are empty
+			if(empty($_POST['story-3-a1']) && empty($_POST['story-3-a2']) && empty($_POST['story-3-a3']) && empty($_POST['story-3-a4']) && empty($_POST['story-3-a5']) && empty($_POST['story-3-a6'])){
+				// if any inputs are empty, redirect the user to the start page.	
+				header("Location: story.php?=start");
+			}
+			// if all is well, continue to the next page
 		}
-		print_r($_SESSION);
 			$content = '';
 			$form = '';
 			$results = '<p>A Female ' . $_SESSION['story-1-a1'] . ' Entered the room. There was ' . $_SESSION['story-1-a2'] . ' in her eyes.</p><p>FEMALE: "Detective ' . $_SESSION['story-1-a3'] . ', thank you for seeing me on such a' . $_SESSION['story-1-a4'] . ' day!"</p>
@@ -109,7 +142,9 @@ if(isset($_GET['pg'])){
 			<p>FEMALE: "Yes, the ' . $_SESSION['story-2-a4'] . ' was ' . $_SESSION['story-2-a5'] . ', weighed ' . $_SESSION['story-2-a6'] . ' pounds, had ' . $_SESSION['story-2-a7'] . ' ' . $_SESSION['story-2-a8'] . ', and had ' . $_SESSION['story-2-a9'] . ' eyes."</p>
 			
 			<p>DETECTIVE: "Thank you, this will help in ' . $_SESSION['story-3-a1'] . ' the ' . $_SESSION['story-3-a2'] . '. However, I will require' . $_SESSION['story-3-a3'] . ' as a downpayment for my ' . $_SESSION['story-3-a4'] . '."</p>
-			<p>FEMALE: "Yes, of course. I will ' . $_SESSION['story-3-a5'] . ' your ' . $_SESSION['story-3-a6'] . '. Thanks again Detective!"</p>';
+			<p>FEMALE: "Yes, of course. I will ' . $_SESSION['story-3-a5'] . ' your ' . $_SESSION['story-3-a6'] . '. Thanks again Detective!"</p>
+			
+			<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=start"><input type="submit" name="story-end" class="btn btn-info pull-right" value="Back to Start"></form>';
 session_unset();		//empties the session file
 session_destroy();
 		}
@@ -157,13 +192,11 @@ session_destroy();
             	<li class="pull-left disabled"><a href="#">Previous</a></li>
                 <li class="pull-right"><a href="#">Next</a></li>
             </ul>
-            <!-- pagination numbers -->
+            <!-- pagination numbers
             <ul class="pagination">
-            
-            	<!-- The first page of the site -->
-            	<li><a href=" <?php echo $_SERVER["PHP_SELF"] ?>?pg=start" name="pg">Start</a></li>
-                        <?php 
-			/* this php loop creates the page links, and figures out what page we are on based on the 'pg' in the query string, giving that link the 'active' state */
+            	<li><a href=" <?php // echo $_SERVER["PHP_SELF"] ?>?pg=start" name="pg">Start</a></li>
+                      <?php  
+			/* this php loop creates the page links, and figures out what page we are on based on the 'pg' in the query string, giving that link the 'active' state 
 			for($i=1; $i<4; $i++){
 					echo '<li';
 					if(isset($_GET['pg'])){
@@ -173,10 +206,10 @@ session_destroy();
 					}
 					echo '><a href="' .$_SERVER["PHP_SELF"] . '?pg=' . $i . '" name="pg">Page ' . $i . '</a></li>';	
 				}
-			?>
-            	<!-- When the user finishes the story, they click the end page -->
-            	<li><a href="<?php echo $_SERVER["PHP_SELF"] ?>?pg=end" name="pg">End</a></li>
-            </ul>
+			*/ ?>
+            	<!-- When the user finishes the story, they click the end page 
+            	<li><a href="<?php /* echo $_SERVER["PHP_SELF"] */ ?>?pg=end" name="pg">End</a></li>
+            </ul>  -->
     
     </div>
     
