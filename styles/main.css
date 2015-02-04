@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***************************
+           FONTS
+***************************/
+
+@font-face {
+    font-family: 'fontinregular';
+    src: url('../fonts/fontin/fontin-regular-webfont.eot');
+    src: url('../fonts/fontin/fontin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin/fontin-regular-webfont.woff2') format('woff2'),
+         url('../fonts/fontin/fontin-regular-webfont.woff') format('woff'),
+         url('../fonts/fontin/fontin-regular-webfont.ttf') format('truetype'),
+         url('../fonts/fontin/fontin-regular-webfont.svg#fontinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontinbold';
+    src: url('../fonts/fontin/fontin-bold-webfont.eot');
+    src: url('../fonts/fontin/fontin-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin/fontin-bold-webfont.woff2') format('woff2'),
+         url('../fonts/fontin/fontin-bold-webfont.woff') format('woff'),
+         url('../fonts/fontin/fontin-bold-webfont.ttf') format('truetype'),
+         url('../fonts/fontin/fontin-bold-webfont.svg#fontinbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontinitalic';
+    src: url('../fonts/fontin/fontin-italic-webfont.eot');
+    src: url('../fonts/fontin/fontin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontin/fontin-italic-webfont.woff2') format('woff2'),
+         url('../fonts/fontin/fontin-italic-webfont.woff') format('woff'),
+         url('../fonts/fontin/fontin-italic-webfont.ttf') format('truetype'),
+         url('../fonts/fontin/fontin-italic-webfont.svg#fontinitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, a, p, li, .btn, label, span, input {
+	font-family: 'fontinbold', Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+/***************************
+    HTML, BODY, WRAPPER
+***************************/
+
+body {
+	background:url("../images/bg_stone.jpg");
+}
+
+#wrapper {
+	background:url("../images/bg_copper_dark.gif");
+	padding: 0;
+	border: 2px solid #1D1D1D;
+	margin-bottom: 20px;
+}
+
+/***************************
+          HEADER
+***************************/
+
+header {
+
+}
+
+
+/***************************
+           MAIN
+***************************/
+
+.sectionBorder {
+	background:url("../images/border_wow.gif");
+	width: 100%;
+	height: 52px;
+}
+
+#main {
+	padding: 2% 1% 1% 1%;
+	text-align: center;
+}
+
+#main #pCont {
+	/*background:url("../images/bg_copper.gif");*/
+	padding: 35px 20px 5px 20px;
+	margin: 0;
+	
+	/*
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-box-shadow: inset 3px 3px 12px 0px rgba(20, 20, 20, 1);
+	-moz-box-shadow:    inset 3px 3px 12px 0px rgba(20, 20, 20, 1);
+	box-shadow:         inset 3px 3px 12px 0px rgba(20, 20, 20, 1);
+	*/
+}
+
+#main #pCont p {
+	font-size: 20px;
+	text-align: justify;
+	color: #c1b577;
+	/*color: #0A0A0A;*/
+}
+
+#main #pCont p .pFirst {
+	font-size: 72px;
+	line-height: 20px;
+	margin-left: -7px;
+}
+
+#main .btnContainer {
+
+}
+
+#main .border-call {
+	text-align: center;
+	width: 70%;
+	margin: 1.5% 15%;
+}
+
+#main .btnContainer .btn {
+	height: 60px;
+	font-size: 28px;
+	background-color: #c1b577;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
+	border: 2px solid transparent;
+}
+
+#main .btnContainer .btn:hover {
+	height: 60px;
+	font-size: 28px;
+	color:#c1b577;
+	background-color: #2D2C2C;
+	
+	border: 2px solid #c1b577;
+}
+
+#main form .form-group {
+	text-align: left;
+}
+
+#main form {
+	padding-top: 8%;
+}
+
+#main form .form-group label {
+	font-size: 18px;
+	color: #c1b577;
+}
+
+#main .formBtn .btn {
+	margin-top: 20px;
+}
+
+#main .formBtn .error {
+	color: #BB0003;
+	margin: 10px 0 0 0;
+}
+
+#main .progress {
+	background: #2D2C2C;
+	border: 2px solid #c1b577;
+	height: 30px;
+	position: relative;
+}
+
+#main .progress span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 20px;
+	color: white;
+}
+
+#main .progress-bar {
+	background: #c1b577;
+}
+
+#main #storyCont {
+	text-align: center;
+}
+
+#main #storyCont p {
+	font-size: 24px;
+	color: #c1b577;
+}
+
+#main #storyCont span {
+	background-color:#c1b577;
+	padding: 0 2px;
+	color: #2D2C2C;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+
+/***************************
+          FOOTER
+***************************/
+
+footer {
+	text-align: center;
+	color:#c1b577;
+}
+
+footer p {
+	font-size: 16px;
+	padding: 20px 1% 1% 1%;
+	line-height: 20px;
+}
+
+footer p a {
+	background-color:#c1b577;
+	padding: 0 2px;
+	color: #2D2C2C;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+footer p a:hover {
+	background-color:#2D2C2C;
+	color: #E9E9E9;
+	text-decoration: none;
+}
