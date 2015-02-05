@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/************************************************************
+					General
+************************************************************/
+body, html {
+	background-color: #fafafa;
+}
+
+nav {
+	background-color: #e9e9e9 !important;
+	border: none !important;
+	border-radius: 0 !important;
+	height: 73px;
+}
+
+.navbar-nav li a {
+	color: #222 !important;
+	margin-top: 20px;
+	border-left: 1px solid #dadada;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	border-bottom: 3px solid #53a087;
+}
+
+nav img {
+	float: left;
+	margin-left: 2%;
+}
+
+.header, .jumbotron {
+	text-align: center;
+	background-color: #55b297;
+	border-radius: 0 !important;
+	color: #fafafa;
+	margin-bottom: 0 !important;
+}
+
+.grey {
+	background-color: #c9c9c9;
+	padding: 50px 0 120px;
+}
+
+.grey p {
+	font-size: 24px;
+}
+
+button {
+	margin-top: 30px;
+	height: 50px;
+	background-color: #53a087 !important;
+	color: #fafafa !important;
+	font-size: 20px !important;
+	font-weight: bold !important;
+}
