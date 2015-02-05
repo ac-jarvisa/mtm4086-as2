@@ -1,0 +1,183 @@
+/* CSS Document */
+
+
+
+html{
+background-image:url(../images/retina_wood.png);
+background-attachment: fixed;	
+background-size:cover;	
+	
+}
+
+body{
+background-image:url(../images/retina_wood.png);
+background-attachment: fixed;	
+background-size:cover;
+}
+.container{	
+background: rgba(106, 5, 11, 0.8);	
+}
+
+.main{
+height: 500px;	
+}
+
+.modal-footer{
+background-color: black;
+color:#FFFFFF;
+font-family: 'hammersmith_oneregular';
+}
+
+#subheader{
+color:#FFFFFF;
+font-family: 'hammersmith_oneregular';	
+}
+
+.row p{
+color:#FFFFFF;		
+}
+
+label{
+color:#FFFFFF;		
+}
+
+
+#foothead{
+color:#FFFFFF;	
+}
+
+.jumbotron{
+background-image:url(../images/stacked-books.JPG);
+color:#FFFFFF;
+font-family: 'hammersmith_oneregular';
+border: 1px solid black;
+}
+
+a{
+color:#FFFFFF;
+    font-family: 'allerregular';
+	font-size: 1.6em;		
+}
+
+a:hover{
+color:#FFFFFF;	
+}
+
+.main h1{
+font-family: 'hammersmith_oneregular';
+color:#FFFFFF;	
+}
+
+#toprow{
+color:#FFFFFF;
+text-align: center;	
+margin-top: 20px;
+margin-bottom: 20px;
+font-family: 'hammersmith_oneregular';
+}
+
+nav{
+    font-family: 'hammersmith_oneregular';	
+}
+
+.nav-tabs>li>a:hover{
+color:#000000;	
+}
+
+#img1{
+background-image:url(../images/img1.jpg);
+height: 175px;
+padding-top: 124px;
+background-position: center;
+background-repeat: no-repeat; 
+background-size: 390px 255px;  
+transition: background-size 1s;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+border-left: 1px solid black;
+}
+
+#img1:hover{
+background-size: 590px 375px; 
+-webkit-filter: grayscale(100%); 
+}
+
+#img2{
+background-image:url(../images/img2.jpg);
+height: 175px;
+padding-top: 124px;
+background-position: center;
+background-repeat: no-repeat; 
+background-size: 390px 255px;  
+transition: background-size 1s;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+border-left: 1px solid black;
+}
+
+#img2:hover{
+background-size: 590px 375px; 
+-webkit-filter: grayscale(100%); 
+}
+
+#img3{
+background-image:url(../images/img3.jpg);
+height: 175px;
+padding-top: 124px;
+background-position: center;
+background-repeat: no-repeat; 
+background-size: 390px 255px;  
+transition: background-size 1s;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+border-left: 1px solid black;
+border-right: 1px solid black;
+}
+
+#img3:hover{
+background-size: 590px 375px; 
+-webkit-filter: grayscale(100%); 
+}
+
+p{
+    font-family: 'allerregular';
+	font-size: 1.3em;	
+}
+
+@font-face {
+    font-family: 'hammersmith_oneregular';
+    src: url('../fonts/hammersmithone-webfont.eot');
+    src: url('../fonts/hammersmithone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hammersmithone-webfont.woff2') format('woff2'),
+         url('../fonts/hammersmithone-webfont.woff') format('woff'),
+         url('../fonts/hammersmithone-webfont.ttf') format('truetype'),
+         url('../fonts/hammersmithone-webfont.svg#hammersmith_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'allerregular';
+    src: url('../fonts/aller_rg-webfont.eot');
+    src: url('../fonts/aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aller_rg-webfont.woff2') format('woff2'),
+         url('../fonts/aller_rg-webfont.woff') format('woff'),
+         url('../fonts/aller_rg-webfont.ttf') format('truetype'),
+         url('../fonts/aller_rg-webfont.svg#allerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
