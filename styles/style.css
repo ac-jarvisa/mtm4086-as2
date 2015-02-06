@@ -1,0 +1,21 @@
+body	{
+	background:	url("../images/texture.png");
+}
+
+.container	{
+	text-align: center;
+}
+
+.input-group	{
+	width:			100%;
+}
+
+.input-group-addon	{
+	width:			25%;
+}
+
+.footer	{
+	width:			100%;
+	margin-top:		3em;
+	border-top:		2px solid black;
+}

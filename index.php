@@ -220,6 +220,9 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	
+	<!-- Mine -->
+	<link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
