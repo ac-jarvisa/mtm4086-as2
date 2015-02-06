@@ -1,0 +1,23 @@
+body{
+    background-image: url(../img/stardust.png);
+    color: #ededed;
+}
+
+.start{
+    margin-top: 50px;
+}
+
+.storyFin{
+    margin: 25px;
+}
+
+.topMar{
+    margin-top:25px;
+}
+
+.storyContainer{
+    background-color: #ededed;
+    color:black;
+    padding-bottom: 25px;
+
+}
