@@ -5,6 +5,9 @@
 }
 html, body{	
 	height: 100%;
+	font-size: 110%;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: rgba(42,42,42,1.00);
 }
 .wrap{
   min-height: 100%;
@@ -20,12 +23,13 @@ footer, .container:after{
 footer{
 	background:
 }
-.active{
-	background: #31b0d5;	
-}
 nav{
 	padding-top:20px;	
 }
-.active{
-		
+a:hover{
+	background: rgb(69, 153, 226) !important;
+	color: rgb(243,243,243);
+}
+input[type=submit] {
+margin: 10px;
 }
