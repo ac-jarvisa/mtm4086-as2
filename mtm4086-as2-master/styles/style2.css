@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**********************************************************
+                       FONTS
+***********************************************************/
+
+@font-face {
+  font-family: 'Ruluko';
+  src: url('../fonts/Ruluko-Regular.eot');
+  src: url('../fonts/Ruluko-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Ruluko-Regular.woff') format('woff'),
+       url('../fonts/Ruluko-Regular.ttf') format('truetype'),
+       url('../fonts/Ruluko-Regular.svg#Ruluko') format('svg');
+}
+
+.fontpro,.fontpro-35955 {
+  font-family: 'Ruluko',sans-serif;
+}
+
+
+@font-face {
+    font-family: 'cameoantiqueregular';
+    src: url('../fonts/cameoantique-webfont.eot');
+    src: url('../fonts/cameoantique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cameoantique-webfont.woff2') format('woff2'),
+         url('../fonts/cameoantique-webfont.woff') format('woff'),
+         url('../fonts/cameoantique-webfont.ttf') format('truetype'),
+         url('../fonts/cameoantique-webfont.svg#cameoantiqueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'nymphetteregular';
+    src: url('../fonts/nymphette-webfont.eot');
+    src: url('../fonts/nymphette-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nymphette-webfont.woff2') format('woff2'),
+         url('../fonts/nymphette-webfont.woff') format('woff'),
+         url('../fonts/nymphette-webfont.ttf') format('truetype'),
+         url('../fonts/nymphette-webfont.svg#nymphetteregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'champignonregular';
+    src: url('../fonts/champignon-webfont.eot');
+    src: url('../fonts/champignon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/champignon-webfont.woff2') format('woff2'),
+         url('../fonts/champignon-webfont.woff') format('woff'),
+         url('../fonts/champignon-webfont.ttf') format('truetype'),
+         url('../fonts/champignon-webfont.svg#champignonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/**********************************************************
+                       DEFAULT
+***********************************************************/
+*{margin:0;}
+/*img { width: 100%; }*/
+html{ font-family:'Ruluko',sans-serif;
+      height:100%;}
+
+body{ background-color:#563933; /*brown-purple*/
+      font-family:'Ruluko',sans-serif;
+	  font-size:16px;
+	  color:#252525;
+	  height:100%;
+}
+.container{
+		/*width:100%;
+		height:100%;*/
+		background-image:url('../images/bg2.png');
+		background-repeat:no-repeat;
+		background-size:100%;
+		padding:0px;
+		height: auto !important;
+        height: 100%;
+        margin: 0 auto -0em;
+		min-height: 100%;
+		min-height: 100%;
+        margin: 0 auto -0em;
+
+}
+a {
+color: #c6a05b;/*antique*/
+text-decoration: none;
+}
+a:hover{ background-color:#a56d2b;/*gold*/}
+.active{ background-color:#b03425; } /*red*/
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{background-color: #b03425;} /*red*/
+
+h1{font-family: 'Ruluko',sans-serif;
+   text-align: center;
+   margin-top:0px;
+   color:#563933;
+   
+   
+}
+   
+h2{ font-family: 'champignonregular';
+    text-align: center;
+	font-size:600%;
+	margin-bottom:0px;
+	color:#b03425;/*red*/
+	line-height:0.8;
+	margin-top:4%;
+	
+}
+@media only screen and (max-width: 1124px) {
+   
+	.formation{ margin-left:70%;
+	            min-height:600px !important;}
+}
+@media only screen and (max-width: 800px) {
+   
+	 
+	.formation{ 
+	            margin-left:30%;
+				margin-bottom:0%;
+				min-height:400px !important;
+				max-height:400px;
+				}
+    
+}
+@media only screen and (max-width: 767px) {
+	.formation{ margin-left:0px;
+	            margin-right:20%;
+				margin-bottom:0%;
+				min-height:400px !important;
+				max-height:400px;
+				margin-top:0px;
+	}
+}
+@media only screen and (max-width: 420px) {
+    .container {background-image: url('../images/zora_3.png');
+	 }
+	.formation{ margin-top:90%;
+	            margin-left:3.2em;}
+}
+
+	
+
+
+/**************************************************
+               CONTENT
+***************************************************/
+.progress-bar{text-align:center;}
+.progress-bar-info{ background-color:#a56d2b;/*gold*/
+                    
+}
+.progress{ background-color:#B03425;/*red*/
+           margin-bottom:0px;}  
+
+.nymp{font-family:'nymphetteregular';
+      color:#ad8552; /*beige*/
+	  text-align:center;
+	  font-size:100px;
+	  margin-top:-30px;
+	  margin-bottom:-30px;
+	  
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{ color:#c6a05b;}
+
+
+
+.logo{margin:0 auto;
+      margin-bottom:-10%;
+	  margin-top:3%;
+	  alignment-adjust:central;}
+
+/****************************************************
+                FORM
+*****************************************************/
+.place{ margin-top:15%;
+        padding-left:5%;}
+/*.neg-left{margin-left:-20%;}*/
+label{background-color:rgba(198,160,91,0.5);
+      width:255px;
+	  margin-bottom:0px;
+}
+
+.form-control {
+font-size: 14px;
+line-height: 1.42857143;
+color:black;
+background-color:transparent;
+background-image: none;
+border: 1px solid #a56d2b;/*gold*/
+border-radius: 0px;
+-webkit-box-shadow:none;
+box-shadow:none;
+-webkit-transition: border-color ease-in-out .15s;
+transition: border-color ease-in-out .15s;
+width:255px;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+background-color:#A56d2b;/*gold*/
+border:thick solid #A56D2B;
+cursor: pointer;
+-webkit-appearance:none;
+font-family: 'cameoantiqueregular', sans serif;
+font-size:24px;
+width:255px;
+color:#c6a05b;
+}
+input[type="submit"]:hover{
+    background-color:#ad722d;
+	border:thick solid #ad722d;/*lighter gold*/
+}
+.bad{ border:medium solid #B03425;}
+.formation{min-height:849px;
+           padding-right:4em;}
+
+/**************************************************
+               PROGRESS
+***************************************************/
+.gold{ background-color:#a56d2b;}/*gold*/
+.progress{ background-color:#B03425;
+           height:2em;
+		   position:relative;} /*red*/
+.bar {
+    z-index: 1;
+    position: absolute;
+}
+.progress span {
+     position: absolute;
+     top: 0;
+     z-index: 2;
+     color: #563933;
+     text-align: center;
+     width: 100%;
+	 font-size:14px;
+	 
+ }
+
+.pagination>li>a, .pagination>li>span{
+	        color:#c6a05b; /*antique*/
+			background-color:#A56D2B; /*gold*/
+			border-color:#563933; /*brown*/
+}           
+.pagination>li:last-child>a, .pagination>li:last-child>span{
+			border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span{
+			border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+	        color:#563933;
+			background-color:#A56D2B; /*gold*/
+			border:1px solid #563933; 
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover { 
+            color:#563933; /*brown*/
+			background-color:#c6a05b; /*antique*/
+			border-color:#563933; /*brown*/
+}
+
+
+
+/***********************************************************
+                FOOTER
+************************************************************/
+.footer { background-color:#b03425;
+         text-align:center;
+		 /*bottom:0px;*/
+		 margin-bottom:0px;
+		 padding-bottom:0px;
+		 width:100%;
+		 height:2em;
+}
+.push {
+height: 2em;
+}
+		 
+.footer, .push{
+     clear: both;
+     }	

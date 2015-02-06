@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+/*Custom Proggress bar from: http://bootstrapdesigntools.com/tools/bootstrap-progress-bar-designer/*/
+.progress {background: rgba(230, 230, 230, 1); border: 1px solid rgba(143, 7, 184, 1); border-radius: 5px; height: 20px;}
+.progress-bar-custom {background: rgba(114, 0, 214, 1);} 
+.progress-striped .progress-bar-custom {background-color: rgba(114, 0, 214, 1); background-image: -webkit-gradient(linear,0 100%,100% 0,color-stop(0.25,rgba(255, 255, 255, 0.17),color-stop(0.25,transparent),color-stop(0.5,transparent),color-stop(0.5,rgba(255, 255, 255, 0.17)),color-stop(0.75,rgba(255, 255, 255, 0.17)),color-stop(0.75,transparent),to(transparent))); background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, 0.17) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, 0.17) 50%,rgba(255, 255, 255, 0.17) 75%,transparent 75%,transparent); background-image: linear-gradient(45deg,rgba(255, 255, 255, 0.17) 25%,transparent 25%,transparent 50%,rgba(255, 255, 255, 0.17) 50%,rgba(255, 255, 255, 0.17) 75%,transparent 75%,transparent); background-size: 42px 42px;}
+
+.btn-custom { 
+  color: #ffffff; 
+  background-color: #6B06BD; 
+  border-color: #6B06BD; 
+  padding: 5px 50px 5px 50px;
+  border-radius: 5px;
+} 
+ 
+.btn-custom:hover, 
+.btn-custom:focus, 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  color: #ffffff; 
+  background-color: #4D0591; 
+  border-color: #6B06BD; 
+} 
+ 
+.btn-custom:active, 
+.btn-custom.active, 
+.open .dropdown-toggle.btn-custom { 
+  background-image: none; 
+} 
+ 
