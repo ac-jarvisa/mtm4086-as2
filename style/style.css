@@ -1,0 +1,31 @@
+
+/*CSS Style Sheet*/
+
+.input-group {
+    margin: 20px auto;
+}
+
+h1 {
+    padding-bottom: 30px;
+}
+
+h4 {
+    padding-bottom: 20px;
+}
+
+.story {
+    padding-bottom: 40px;
+}
+
+html {
+    background: #2482AE;
+}
+
+body {
+
+    background: #2482AE;
+}
+
+.container {
+    margin-top: 20px;
+}
