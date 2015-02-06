@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:url(../images/rain.jpg) no-repeat center center fixed ;
+	-webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.paragraph1{
+	padding: 20px 0;	
+}
+
+h4{
+	line-height: 1.2;	
+}
+
+.header{
+	/*background-color: #485872 ;*/
+	color: #fff;
+	font-weight: bold;	
+}
+
+.btnwidth{
+	width: 400px !important;	
+	display: block;
+
