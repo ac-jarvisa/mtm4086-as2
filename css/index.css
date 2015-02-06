@@ -1,0 +1,29 @@
+body {
+	
+	background: url('../media/1.jpg')!important;
+	color: #fff !important;
+}
+
+.container-fluid {
+
+	background: rgba(0,0,0,0.4) !important;
+
+
+
+}
+
+nav {
+
+	color: white !important;
+}
+
+#finalo p {
+
+	font-size: 2em;
+}
+
+
+.jumbotron {
+
+	background: none !important;
+}
