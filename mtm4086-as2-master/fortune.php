@@ -89,7 +89,7 @@ exit();
            <div class="formation"> 
            <div class="fortune img-rounded"> 
             
-             <p><mark class="fancy"><?php echo $_SESSION["name"];?>,</mark> you are  <?php echo $_SESSION["adj"];?> consider yourself fortunate. When it comes to <?php echo $_SESSION["strength"];?>, the Gods have indeed blessed you!</p>
+             <p><mark class="fancy"><?php echo $_SESSION["name"];?>,</mark> you are <?php echo $_SESSION["adj"];?> consider yourself fortunate. When it comes to <?php echo $_SESSION["strength"];?>, the Gods have indeed blessed you!</p>
              
              <p> Reward your efforts from time to time. You should <?php echo $_SESSION["enjoy"];?>, eat more <?php echo $_SESSION["food"];?> or go to <?php echo $_SESSION["destination"];?>. It would be well deserved, just do it!</p>
              
