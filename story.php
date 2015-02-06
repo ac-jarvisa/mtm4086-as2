@@ -9,7 +9,7 @@ $content = '<h2 class="text-uppercase">Introduction Chapter</h2><hr>
 <form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=1">
 
 <label for="story-start"></label>
-<input type="submit" name="story-start" id="story-start" class="btn btn-primary btn-lg" value="Start Your Story">
+<button type="submit" name="story-start" id="story-start" class="btn btn-primary btn-lg">Start Your Story  <span class="glyphicon glyphicon-arrow-right"></span></button>
 
 </form>';
 $form = '';
@@ -21,7 +21,7 @@ if(isset($_GET['pg'])){
 	if($_GET['pg'] == 1){
 
 		$content = '<h2>INTRODUCTION CHAPTER</h2><small>Part 1</small><hr>
-		<p class="bg-danger col-xs-12"><strong>WARNING!</strong> If you do not fill in all of the fields, you will be sent back to the start. Why such extreme measures? Because I am the webmaster and I say so!</p>';
+		<p class="bg-warning col-xs-12"><span class="alarm glyphicon glyphicon-bell"></span><strong>WARNING!</strong> Fill in all of the fields, or you will be sent back to the start. Why? Because I am the webmaster and I say so!</p>';
 		
 		$form = '<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=2">
             	<label for="story-1-a1">1) Noun (Job) </label>
@@ -34,7 +34,8 @@ if(isset($_GET['pg'])){
                 <input type="text" id="story-1-a4" name="story-1-a4" class="form-control">
                 <label for="story-1-a5">5) Noun (Name) </label>
                 <input type="text" id="story-1-a5" name="story-1-a5" class="form-control">
-                <input type="submit" name="story-1" class="btn btn-primary btn-lg pull-right" value="next part">            </form>';
+				
+				<button type="submit" name="story-1" id="story-1" class="btn btn-primary btn-lg pull-right">Next Part  <span class="glyphicon glyphicon-arrow-right"></span></button></form>';
 			
 	}else if($_GET['pg'] == 2){
 		// if the submit button was pressed on the previous page...
@@ -54,7 +55,7 @@ if(isset($_GET['pg'])){
 		}
 		
 			$content = '<h2>INTRODUCTION CHAPTER</h2><small>Part 2</small><hr>
-			<p class="bg-danger col-xs-12"><strong>WARNING!</strong> If you do not fill in all of the fields, you will be sent back to the start. Why such extreme measures? Because I am the webmaster and I say so!</p>';
+			<p class="bg-danger col-xs-12"><span class="alarm glyphicon glyphicon-bell"></span><strong>WARNING!</strong> Fill in all of the fields, or you will be sent back to the start. Why such extreme measures? Because I am the webmaster and I say so!</p>';
 			
 			$form = '<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=3">
             	<label for="story-2-a1">1) Person / Thing </label>
@@ -73,7 +74,8 @@ if(isset($_GET['pg'])){
                 <input type="text" id="story-2-a7" name="story-2-a7" class="form-control">
 				 <label for="story-2-a8">8) Colour </label>
                 <input type="text" id="story-2-a8" name="story-2-a8" class="form-control">
-                <input type="submit" name="story-2" class="btn btn-primary btn-lg pull-right" value="next part"></form>';
+				
+				<button type="submit" name="story-2" id="story-2" class="btn btn-primary btn-lg pull-right">Next Part  <span class="glyphicon glyphicon-arrow-right"></span></button></form>';
 		}
 	else if($_GET['pg'] == 3){
 		// if the submit button was pressed on the last page...
@@ -95,7 +97,7 @@ if(isset($_GET['pg'])){
 		}
 		// this variable contains the story content displayed on the page
 		$content = '<h2>INTRODUCTION CHAPTER</h2><small>Part 3</small><hr>
-		<p class="bg-danger col-xs-12"><strong>WARNING!</strong> If you do not fill in all of the fields, you will be sent back to the start. Why such extreme measures? Because I am the webmaster and I say so!</p>';
+		<p class="bg-danger col-xs-12"><span class="alarm glyphicon glyphicon-bell"></span><strong>WARNING!</strong> Fill in all of the fields, or you will be sent back to the start. Why such extreme measures? Because I am the webmaster and I say so!</p>';
 		// this variable contains the form where users can insert the missing sections of the story.
 		$form = '<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=end">
             	<label for="story-3-a1">1) An Action </label>
@@ -110,7 +112,8 @@ if(isset($_GET['pg'])){
                 <input type="text" id="story-1-a5" name="story-3-a5" class="form-control">
 				<label for="story-3-a6">6) A Thing </label>
                 <input type="text" id="story-1-a6" name="story-3-a6" class="form-control">
-                <input type="submit" name="story-3" class="btn btn-primary btn-lg pull-right" value="next part">            </form>';
+				
+				<button type="submit" name="story-3" id="story-3" class="btn btn-primary btn-lg pull-right">Next Part  <span class="glyphicon glyphicon-arrow-right"></span></button></form>';
 				
 				
 	}else if($_GET['pg'] == "end"){
@@ -144,7 +147,8 @@ if(isset($_GET['pg'])){
 			<p>DETECTIVE: "Thank you, this will help in ' . $_SESSION['story-3-a1'] . ' the ' . $_SESSION['story-3-a2'] . '. However, I will require ' . $_SESSION['story-3-a3'] . ' as a downpayment for my ' . $_SESSION['story-3-a4'] . '."</p>
 			<p>FEMALE: "Yes, of course. I will ' . $_SESSION['story-3-a5'] . ' your ' . $_SESSION['story-3-a6'] . '. Thanks again Detective!"</p>
 			
-			<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=start"><input type="submit" name="story-end" class="btn btn-primary btn-lg pull-right" value="Back to Start"></form>';
+			<form method="post" class="form-horizontal" role="form" action="' . $_SERVER["PHP_SELF"] . '?pg=start">
+			<button type="submit" name="story-end" id="story-end" class="btn btn-primary btn-lg pull-right">Back to Start  <span class="glyphicon glyphicon-arrow-right"></span></button></form>';
 session_unset();		//empties the session file
 session_destroy();
 		}
@@ -166,7 +170,6 @@ session_destroy();
 </head>
 
 <body>
-
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand bg-primary" href="#">Mad Libs Detective Stories</a>
@@ -226,6 +229,6 @@ session_destroy();
     
     </div>
     
-    </div><footer class="panel-footer">this is my foot!</footer>
+    </div><footer class="panel-footer"><p class=" text-center">Copyright &copy;2015 <a href="#">Tyler Klepsch</a> Designs</p></footer>
 </body>
 </html>

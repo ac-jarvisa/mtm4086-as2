@@ -10,18 +10,15 @@ html, body{
 	color: rgba(42,42,42,1.00);
 }
 .wrap{
-  min-height: 100%;
-  margin-bottom: -10%; 	
+  min-height: 94%;	
+  margin-bottom: -50px;
 }
-.container:after{
+.wrap:after{
   content: "";
   display: block;
 }
-footer, .container:after{
-	height: 10%;
-}
-footer{
-	background:
+footer, .wrap:after{
+	height: 50px;
 }
 nav{
 	padding-top:20px;	
@@ -32,4 +29,7 @@ a:hover{
 }
 input[type=submit] {
 margin: 10px;
+}
+.alarm{
+	padding: 10px;	
 }
