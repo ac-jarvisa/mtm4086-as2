@@ -128,9 +128,9 @@ default:
 //<!--Home!!!!!!! -->       
     echo '<div class="jumbotron">';
         echo '<div class="container">';
-            echo '<h1>Hello, world!</h1>';
-            echo '<p>Lorem ipsum</p>';
-            echo '<p><a class="btn btn-primary btn-lg" href="index.php?pg=1" role="button">Learn more</a></p>';
+            echo '<h1>Welcome!</h1>';
+            echo '<p>Teach Somebody a moral lesson today!</p>';
+            echo '<p><a class="btn btn-danger btn-lg" href="index.php?pg=1" role="button">Start Story</a></p>';
         echo '</div>';
     echo '</div>';
 
