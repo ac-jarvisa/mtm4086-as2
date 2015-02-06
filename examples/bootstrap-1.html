@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bootstrap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- you can also add inside the content attribute "maximum-scale=1.0, user-scalable=no", which will disable the zoom functions on your site (making it feel more like a native app) -->
+
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<style>
+	.container{
+		background-color:#54B7B2;	
+	}
+	
+	.row div{
+		border:1px solid black;	
+	}
+
+</style>
+
+</head>
+
+<body>
+<!-- <div class="embed-responsive embed-responsive-4by3">
+    <video autoplay loop class="embed-responsive-item">
+        <source src="media/dreadnaught.mp4">
+        <source src="media/dreadnaught.ogv">
+    </video>
+</div> -->
+
+	<div class="container">
+    	<!-- container is a fixed-width, responsive container for your site, the breakpoints are as follows:
+        x-small devices / phones: <768px - container 100% width
+        small devices / tablets: >= 768px - container set to 750px
+        medium devices / desktops: >= 992px - container set to 970px
+        large devices / desktops: > 1200px - container set to 1170px
+        -->
+        
+        <!-- this is quite silly -->
+        <div class="jumbotron">
+        	<h1>Massive Header! <small>Smaller Sub Header!</small></h1>
+            <!-- small is predefined as an inline subheader, based on the header it's inside of -->
+            <h3>Yay!</h3>
+        </div>
+        
+        <!-- set up a nav using the class 'nav', then define the type of nav -->
+        <nav>
+            <ul class="nav nav-pills nav-stacked">
+            <!-- nav justified makes your horizontal nav stretch equally across the screen; nav-stacked makes the horizontal styles pills and tabs into a vertical nav -->
+                <li class="active"><a href="#">Navlink</a></li>
+                <li><a href="#">Navlink</a></li>
+                <li class="disabled"><a href="#">Navlink</a></li>
+                <li><a href="#">Navlink</a></li>
+            </ul>
+        </nav>
+        
+        
+        <!-- using bootstrap's grid system...start by creating a row -->
+        <div class="row">
+        	<!-- this is a 12 column setup - you set columns that span 1 or multiple columns, but all must in the end add up to 12 -->
+            <div class="col-xs-4">
+            	<section class="pull-right">This is a <abbr title="Tool Tip!">column!</abbr></section>
+                <!-- pull-right and pull-left with float an element to the left or right -->
+            </div>
+            <div class="col-xs-4"><code>This</code> is a column!</div>
+            <div class="col-xs-4">This <kbd>is a</kbd> column!</div>
+        </div>
+        
+        <div class="row">
+        	<!-- by using medium columns, these columns will switch to 100% width under the 768px break point - you can use xs, sm, md, lg, and they correspond to the breakpoints above -->
+        	<div class="col-md-3"><mark>This is a column!</mark></div>
+            <div class="col-md-6">This is a column!</div>
+            <div class="col-md-3">This is a column!</div>
+        </div>
+        
+        <div class="row">
+        	<div class="col-md-2">
+            	<ul class="nav">
+                	<li><a href="#">Vertical</a></li>
+                    <li><a href="#">Vertical</a></li>
+                    <li><a href="#">Vertical</a></li>
+                    <li><a href="#">Vertical</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10">Random stuff...</div>
+        </div>
+        
+        <div>
+        	<h3>A collection of Pigs</h3>
+            <!-- three different image classes: img-rounded, img-circle (will only be a perfect circle if the image is square), img-thumbnail -->
+            <img src="media/pig.jpg" class="img-rounded" alt="Happy Pig">
+            <img src="media/pig.jpg" class="img-circle" alt="Happy Pig">
+            <img src="media/pig.jpg" class="img-thumbnail" alt="Happy Pig">
+            <span class="sr-only">These pigs are smiling at you</span>
+            <!-- the class "sr-only" will hide this element to all devices except screen readers -->
+            <p>
+            	<!--if you want to make your image responsive (up to 100% width of the original image)-->
+                <img src="media/PurplePlanet-FT.jpg" class="img-responsive img-circle" alt="Purple Pig Planet">
+            </p>
+        </div>
+        
+        <!-- horizontal rule, nothing particular special -->
+        <hr>
+        
+        <!-- 100% video width responsive based on aspect ratio, can also do 16by9, or whatever your video is-->
+        <div class="embed-responsive embed-responsive-4by3">
+        	<video controls class="embed-responsive-item">
+            	<source src="media/dreadnaught.mp4">
+                <source src="media/dreadnaught.ogv">
+            </video>
+        </div>
+    </div>
+</body>
+</html>
