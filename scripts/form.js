@@ -18,7 +18,7 @@ $(document).ready(function() {
 			 event.preventDefault();
 			 
 			 var errorField = document.createElement("p");
-			 errorField.innerHTML = "You must fill out all the fields.";
+			 errorField.innerHTML = "What the hell, kindly fill in the form.";
 			 errorField.className = "error";
 			 
 			 document.querySelector(".formBtn").appendChild(errorField);

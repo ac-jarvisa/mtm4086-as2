@@ -24,7 +24,7 @@
         
         <div id="main">
         	<div id="pCont">
-        		<p><span class="pFirst">Y</span>ou have made a brave choice, traveller. The fates are not always kind to those who challenge them. Complete the information below as you see fit, and discover the rewards for your actions! And the consequences...</p>
+        		<p><span class="pFirst">Y</span>ou have made a great decision, to fight other warriors. The decisions are always harsh with consequences and posibbly death. Sign up now and become Immortal forever...</p>
         	</div>
             
             <img class="img-responsive border-call" src="images/border_call.svg" alt="">
@@ -46,46 +46,46 @@
             	<div class="col-sm-6">
                     <div class="form-group">
                         <label for="noun-plural-1">Noun (Plural):</label>
-                        <input type="text" id="noun-plural-1" name="noun-plural-1" class="form-control" placeholder="eg. cars, doors, plates...">
+                        <input type="text" id="noun-plural-1" name="noun-plural-1" class="form-control" placeholder="eg. swords, spears, weapons...">
                     </div>
                     <div class="form-group">
                         <label for="noun-1">Noun:</label>
-                        <input type="text" id="noun-1" name="noun-1" class="form-control" placeholder="eg. house, knife, statue...">
+                        <input type="text" id="noun-1" name="noun-1" class="form-control" placeholder="eg. warrior, battle, legion...">
                     </div>
                     <div class="form-group">
                         <label for="verb-1">Verb:</label>
-                        <input type="text" id="verb-1" name="verb-1" class="form-control" placeholder="eg. run, jump, type...">
+                        <input type="text" id="verb-1" name="verb-1" class="form-control" placeholder="eg. rolls, jumps, strike, type...">
                     </div>
                     <div class="form-group">
                         <label for="adjective-1">Adjective:</label>
-                        <input type="text" id="adjective-1" name="adjective-1" class="form-control" placeholder="eg. careful, slow, strong...">
+                        <input type="text" id="adjective-1" name="adjective-1" class="form-control" placeholder="eg. swift, accurate, lost...">
                     </div>
                     <div class="form-group">
                         <label for="number-1">Number:</label>
-                        <input type="text" id="number-1" name="number-1" class="form-control" placeholder="eg. six, seventeen...">
+                        <input type="text" id="number-1" name="number-1" class="form-control" placeholder="eg. six, one, two...">
                     </div>
                 </div><!--col-sm-6-->
                 
                 <div class="col-sm-6">
                 	<div class="form-group">
                         <label for="noun-plural-2">Noun (Plural):</label>
-                        <input type="text" id="noun-plural-2" name="noun-plural-2" class="form-control" placeholder="eg. cars, doors, plates...">
+                        <input type="text" id="noun-plural-2" name="noun-plural-2" class="form-control" placeholder="eg. swords, spears, weapons...">
                     </div>
                     <div class="form-group">
                         <label for="noun-2">Noun:</label>
-                        <input type="text" id="noun-2" name="noun-2" class="form-control" placeholder="eg. house, knife, statue...">
+                        <input type="text" id="noun-2" name="noun-2" class="form-control" placeholder="eg. warrior, battle, legion...">
                     </div>
                 	<div class="form-group">
                         <label for="verb-2">Verb:</label>
-                        <input type="text" id="verb-2" name="verb-2" class="form-control" placeholder="eg. run, jump, type...">
+                        <input type="text" id="verb-2" name="verb-2" class="form-control" placeholder="eg. rolls, jumps, strike...">
                     </div>
                     <div class="form-group">
                         <label for="place-1">Place:</label>
-                        <input type="text" id="place-1" name="place-1" class="form-control" placeholder="eg. Paris, Spark St...">
+                        <input type="text" id="place-1" name="place-1" class="form-control" placeholder="eg. Rome, Greece, Bethany...">
                     </div>
                     <div class="form-group">
                         <label for="body-part-plural-1">Body Part (Plural):</label>
-                        <input type="text" id="body-part-plural-1" name="body-part-plural-1" class="form-control" placeholder="eg. arms, hairs, lungs...">
+                        <input type="text" id="body-part-plural-1" name="body-part-plural-1" class="form-control" placeholder="eg. legs, hand, head...">
                     </div>
                 </div>
                 

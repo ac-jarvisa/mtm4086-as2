@@ -24,7 +24,7 @@
         
         <div id="main">
         	<div id="pCont">
-        		<p><span class="pFirst">W</span>elcome to The Library, traveller! Here is recorded the epic histories and tales of mankind, those that have passed, and those that are yet to come. The power of this place is a mystery, but what is known is that a precious few who come here are given a precious gift, and a terrible responsibility: the power to challenge the cycle of destiny and rewrite the fates to their whim. Are you among them, traveller? Do you possess the gift of destiny? Enter, and find out. Enter, and rewrite history. Enter, and challenge fate!
+        		<p><span class="pFirst">C</span>enturies ago There lived a great king who went to war with his gallant soldiers, they all fought and stood by him the war was great and he came back victorious so in order to display his pleasure he held a fight in  one of the famous arena in rome whoever wins become the 7th Commander of the sixth legion.
                 <br>
 				<?php
                 
@@ -34,7 +34,7 @@
         	</div>
             <img class="img-responsive border-call" src="images/border_call.svg">
             <div class="btnContainer">
-            	<input type="submit" class="btn" value="CHALLENGE DESTINY">
+            	<input type="submit" class="btn" value="FIGHT TILL DEATH">
             </div><!--btnContainer-->
             <img class="img-responsive border-call" src="images/border_call.svg">
         </div><!--main-->
