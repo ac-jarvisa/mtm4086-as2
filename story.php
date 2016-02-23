@@ -19,7 +19,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>The Library of Fate</title>
+    <title>The Ultimate Warrior</title>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -36,7 +36,7 @@
         
         <div id="main">
         	<div id="pCont">
-        		<p><span class="pFirst">W</span>ell done, fate-weaver. The turns of time and destiny have been rewritten as you directed them. Beware, however: rarely does such an act come without price. The fates will surely extract payment from you... eventually. For now, gaze below, and see the new course history has taken, thanks to you.</p>
+        		<p><span class="pFirst">C</span>enturies ago There lived a great king who went to war with his gallant soldiers, they all fought and stood by him the war was great and he came back victorious so in order to display his pleasure he held a fight in  one of the famous arena in rome whoever wins become the 7th Commander of the sixth legion</p>
         	</div>
             
             <img class="img-responsive border-call" src="images/border_call.svg" alt="">
@@ -48,21 +48,20 @@
             	<?php
 					
 					echo "<p>Two <span>" . $_POST['noun-plural-1'] . "</span>, both alike in dignity,<br>
-							In fair <span>" . $_POST['place-1'] . "</span>, where we lay our scene,<br>
-							From ancient <span>" . $_POST['noun-1'] . "</span> break to new mutiny,<br>
-							Where civil blood makes civil hands unclean.<br>
-							From forth the fatal loins of these two foes<br>
-							A pair of star-cross`d <span>" . $_POST['noun-plural-2'] . "</span> take their life;<br>
-							Whole misadventured piteous overthrows<br>
-							Do with their <span>" . $_POST['noun-2'] . "</span> bury their parents` strife.<br>
-							The fearful passage of their <span>" . $_POST['adjective-1'] . "</span> love,<br>
-							And the continuance of their parents` rage,<br>
-							Which, but their children`s end, nought could <span>" . $_POST['verb-1'] . "</span>,<br>
-							Is now the <span>" . $_POST['number-1'] . "</span> hours` traffic of our stage;<br>
-							The which if you with patient <span>" . $_POST['body-part-plural-1'] . "</span> attend,<br>
-							What here shall <span>" . $_POST['verb-2'] . "</span>, our toil shall strive to mend.</p>";
-				
-				?>
+							On the First day two warriors one from the first legion of Capua <span>" . $_POST['place-1'] . "</span>, and the other from the legion of Capua,<br>
+							and the other from the legion of Spartacus went into the  <span>" . $_POST['noun-1'] . "</span> arena the first in Rome, Greece and Bethany to <br>
+							settle their differences they agreed that they would fight to<br>
+							the death, so a contest was set up they both <br>
+							had their wish fulfilled, meanwhile the warrior of the region <span>" . $_POST['noun-plural-2'] . "</span> of Capua had a helmet and a sword given to <br>
+							him by his father that sword has never lost in battle now <br>
+							the other warrior uses two swords and two  <span>" . $_POST['noun-2'] . "</span>spears, one spear on the left hand the other on the back, <br>
+							and the other on the right he has six weapons  <span>" . $_POST['adjective-1'] . "</span> love,<br>
+							at his disposal, He also has a horse. He is always swift and accurate,<br>
+							he has never lost he jumps in the air,  <span>" . $_POST['verb-1'] . "</span>,<br>
+							lands with his legs rolls and strike on the ground with <span>" . $_POST['number-1'] . "</span> his head upright, he is known <br>
+							as the bringer of rain. <span>" . $_POST['body-part-plural-1'] . "</span> attend.</p>";
+                    
+				?>  
                 
             </div>
             
